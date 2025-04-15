@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../image/1.jpg');
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* #check {
+    background: url("1.jpg") no-repeat center center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* width: 100vw;
+    height: 101vh; */
+/* }  */
+.container#check.active
+{
+    filter: blur(20%);
+}
+
+#staff {
+    padding: 7px 46px;
+    margin: 6px 21px;
+    /* background-color: yellowgreen; */
+    font-weight: 800;
+    border: 2px solid black;
+}
+
+.head {
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top: 1vh;
+    left: 0vw;
+    border: 2px solid white;
+    margin-right: 78vw;
+}
+
+.wrapper {
+    height: 81vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px 40px;
+    position: absolute;
+    top:80vh;
+    left: 65vh;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.6);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent {
+    position: relative;
+    top:-20px;
+    background: rgba(255, 255,255, 0.5);
+    width: 480px;
+    height: 513px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip:padding-box ;
+}
+
+a {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.modalclose {
+   
+    color: black;
+    text-decoration: none;
+    font-size: 36px;
+    display: flex;
+    float: right;
+}
+
+.modalcontent label {
+    font-size: 24px;
+}
+
+#name {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+
+#email {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+#password {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+#Phone {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+.submit {
+    padding: 9px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+    cursor:pointer;
+}
+
+.reset {
+    margin: 6px 42px;
+    padding: 9px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: whitesmoke;
+     color: black;
+     background: rgba(255, 255,255, 0.5);
+     backdrop-filter: blur(40px);
+     background-clip:padding-box ;
+     cursor:pointer;
+}
+
+
+
+/* ///////////////////////////////////// */
+.wrapper1 {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper1 a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    padding: 5px 40px;
+    position: absolute; 
+    top: 80vh;
+    left: 46vw;
+    font-size: 20px;
+    font-weight: 600;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}   
+
+.modal1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.6);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal1:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent1 {
+    position: relative;
+    top:-20px;
+    background: rgba(255, 255,255, 0.5);
+    width: 418px;
+    height: 338px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip:padding-box ;
+}
+
+a {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.modalclose1 {
+    display: flex;
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.modalcontent1 label {
+    font-size: 24px;
+}
+
+#email1 {
+    padding: 5px 10px;
+    margin: 6px 18px;
+    width: 294px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+
+#password1 {
+    padding: 5px 10px;
+    margin: 6px 18px;
+    width: 294px;
+    border: none;
+    border-bottom: 0.5px solid black;
+    background: rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(40px);
+    background-clip:padding-box ;
+}
+
+.submit3 {
+    margin: 12px 4px;
+    padding: 5px 38px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: whitesmoke;
+    cursor:pointer;
+   
+}
+
+.reset3 {
+    margin: 12px 26px;
+    padding: 5px 38px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: whitesmoke;
+     color: black;
+     cursor:pointer;
+}
+/* /////////////// */
+/* ///////////////////////////////////// */
+.wrapper2 {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper2 a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    /* background-color: whitesmoke; */
+    /* padding: 13px 40px; */
+    position: absolute; 
+    top: 64.5vh;
+    left: 53.5vw;
+}   
+
+.modal2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.6);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal2:target {
+    visibility: hidden;
+    opacity: 1;
+}
+
+.modalcontent2 {
+    position: relative;
+    top:-20px;
+    background: whitesmoke;
+    width: 440px;
+    height: 320px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 12px;
+}
+
+a {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.modalclose2 {
+    position: absolute;
+    top: 0px;
+    left: 463px;
+    
+    color: black;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.modalcontent2 label {
+    font-size: 24px;
+}
+
+#email2 {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+}
+
+#password2 {
+    padding: 9px 14px;
+    margin: 4px 15px;
+    width: 400px;
+}
+
+.submit2 {
+    position: relative;
+    left: -16px;
+    top: 40px;
+    padding: 5px 22px;
+}
+
+.reset2 {
+    position: relative;
+    left: -27px;
+    top: 40px;
+    padding: 5px 22px;
+}
+@media screen and (max-width:998px){
+    .head{
+        color:red;
+        font-size:26px;
+          margin-right: 77vw;
+    }
+    .wrapper a{
+        color: black;
+        margin: 0px -36px;
+    }
+}
+@media screen and (max-width:844px){
+    .head{
+        color:yellowgreen;
+        font-size:26px;
+          margin-right: 72vw;
+    }
+}
+@media screen and (max-width:692px){
+    .head{
+        color:yellowgreen;
+        font-size:26px;
+          margin-right: 60vw;
+    }
+}
+
+@media screen and (max-width:692px){
+    .head{
+        color:yellowgreen;
+        font-size:26px;
+          margin-right: 50vw;
+    }
+}
+@media screen and (max-width:1138px){
+    .reset3{
+        color:black;
+       top: 42vh;
+    }
+     .submit3{
+        color:black;
+       top: 42vh;
+    }
+}
+@media screen and (max-width:1138px){
+    .wrapper a{
+        color:black;
+       left: 39vw;
+    }
+}
+@media screen and (max-width:1024px){
+    .wrapper a{
+        color:black;
+       left: 39vw;
+    }
+}
+.txt{
+    font-size: 33px;
+}
+/* @media screen and (max-width:1137.78px){
+    .modalclose1{
+        position: absolute;
+        top: -9px;
+        left: 38.5vw;
+    }
+    } */

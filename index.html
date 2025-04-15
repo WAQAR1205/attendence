@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/index.css">
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js";></script>
+
+<body>
+    <!-- <p>Hello this is our para</p> -->
+    <div class="background" id="check">
+        <div class="head">SMI UNIVERSITY</div>
+        <div class="wrapper">
+            <a href="#modalbox" class="btn btn-info">Admin</a>
+        </div>
+        <div id="modalbox" class="modal">
+            <div class="modalcontent">
+                <a href="#" class="modalclose">&times;</a>
+                <h1>sign in for admin</h1>
+                <hr>
+                <!-- <label for="text">Your Name</label>
+                <input type="text" id="name" class="name" placeholder="enter your name" value="admin"> -->
+                <br>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="email" placeholder="type your name">
+                <br>
+                <!-- <label for="text">Your Phone no</label>
+                <input type="text" id="Phone" class="phone" placeholder="type your Phone no"> -->
+                <br>
+                <label for="password">Your password</label>
+                <input type="password" id="password" class="password" placeholder="type your password">
+                <br>
+                <button class="reset btn btn-info" onclick = "del()">CLEAR</button>
+                <button class="submit btn btn-info"  onclick = "login()">LOGIN</button>
+            </div>
+    </div>
+
+    <div class="wrapper1">
+        <a href="#modalbox1" class="btn btn-info">Teacher</a>
+    </div>
+    <div id="modalbox1" class="modal1">
+        <div class="modalcontent1">
+            <a href="#" class="modalclose1">&times;</a>
+            <h1 class="txt">sign in for Teacher</h1>
+            <hr>
+            <label for="Email">email</label>
+            <input type="email" id="email1" class="temail" placeholder="type your email">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password1" class="tpass" placeholder="type your password">
+            <br>
+            <input type="checkbox" name="REMEMBER ME" id="REMEMBER"> Remember Me
+            <br>
+            <button class="reset3 btn btn-info" onclick="sabhatao()" >CLEAR</button>
+            <button class="submit3 btn btn-info" onclick = "submi()">LOGIN</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

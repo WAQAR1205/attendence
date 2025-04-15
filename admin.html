@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/admin.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js";></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <h1 class="txt">SMI UNIVERSITY</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="add1 btn btn-info" aria-current="page" href="#">ADD TEACHER</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="std1 btn btn-info" onclick="addstd()">ADD STUDENT</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="sub1 btn btn-info" onclick="addsub()">ADD SUBJECT</button>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <a class="log1 btn btn-info"  aria-current="page" onclick="logout()">LOGOUT</a>
+                      </li>
+                </form>
+              </div>
+          </nav>
+          <div class="wrapper">
+            <a href="#modalbox" class="head btn btn-info" >Add Teacher</a>
+          </div>
+          <div id="modalbox" class="modal">
+            <div class="modalcontent ">
+              <a href="#" class="modalclose">&times;</a> 
+              <h1 id="h1">Add Teacher</h1>
+                <hr>
+                <label for="text">Teacher Name</label>
+                <input type="text" id="name1" placeholder="type your Name">
+                <br>
+                <label for="text">Faculty No</label>
+                <input type="text" id="faculty" placeholder="type your Faculty No">
+                <br>
+                <!-- <label for="Alias">Alias</label>  <br>
+                <input type="Alias" id="Alias" placeholder="type your Alias No">
+                 <select id="Alias">
+                  <option value="1">choose Alias</option>
+                  <option value="1">AI</option>
+                  <option value="2">CS</option>
+                  <option value="3">BBA</option>
+                  <option value="3">SE</option>
+                  <option value="3">ED</option>
+                </select>
+                <br> -->
+                <label for="dr" >Designation</label>
+                <select id="Desig" class="dr">
+                  <option value="1">choose Designation</option>
+                  <option value="2">PRO</option>
+                  <option value="3">ASS-PRO</option>
+                  <option value="4">DEEN</option>
+                </select>
+                <br>
+                <label for="text">teacher Contact No</label>
+                <input type="text" id="contact" class="cont" placeholder="type your Contact No" >
+                <br>
+                <label for="Email">Teacher Email</label>
+                <input type="email" id="email1" class="em1" placeholder="type your Email" >
+                <br>
+                <label for="text">Choose Date</label>
+                <input type="datetime-local" id="date" class="dta" placeholder="CSC-...">
+                <br>
+                <label for="password">password</label>
+                <input type = "password" id="pass" class="pass" place holder = "password" >
+                <br>
+                <button class="reset btn btn-info" onclick="dele()">CLEAR</button>
+                <button class="submit btn btn-info" onclick="sub()">ADD TEACHER</button> 
+              </div>
+        </div>
+            <table class="table" id="clek">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                  </tr>
+                </thead>
+                <tbody id="tb">
+                  <!-- <tr>
+                    <th scope="row" class="teN">1</th>
+                    <td>gg</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td class="gh">@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+                </tbody>
+              </table>
+   
+  
+</body>
+<script src="app.js"></script>
+</html>

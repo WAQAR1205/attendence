@@ -1,0 +1,143 @@
+.wrapper {
+    height: 10vh;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    border-radius: 3px;
+    padding: 13px 40px;
+    position: absolute;
+    top:12vh;
+    left: 35vw;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+.txts{
+    color: white;
+    font-size: 29px;
+}
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.6);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modalcontent {
+    position: absolute;
+    top: 96px;
+    background: rgba(255, 255,255, 0.5);
+    width: 38vw;
+    height: 60vh;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    border:  2px solid transparent;
+    background-clip:padding-box ;
+}
+
+
+#h1{
+ margin: 3px 70px;
+}
+.modalclose {
+    display: flex;
+    float: right;
+    color: black;
+    text-decoration: none;
+    font-size: 36px;
+}
+.modalcontent label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#stdname {
+    padding: 4px 10px;
+    margin: 2px 15px;
+    width: 361px;
+    border: none;
+    border-bottom: 0.5px solid black;
+}
+#stdpassword {
+    padding: 4px 10px;
+    margin: 2px 15px;
+    width: 361px;
+    border: none;
+    border-bottom: 0.5px solid black;
+}
+.logstd{
+    margin: 6px 22px;
+    padding: 7px 10px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.stds{
+    margin: 6px 11px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+.attds{
+    margin: 6px 11px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+}
+.sttdattd{
+margin: 6px 11px;
+font-size: 16px;
+font-weight: 600;
+background-color: white;
+}
+.txt{
+    color: white;
+    font-size: 29px;
+}
+.resetstd{
+        margin: 10px 24px;
+        padding: 9px 41px;
+        background-color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+.submitstd {
+    margin: 10px 10px;
+    padding: 9px 38px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: white;
+
+}
+
+.attds:first-child{
+background-color:#0dcaf0;
+}
+#datetime{
+    padding: 4px 10px;
+    margin: 2px 15px;
+    width: 361px;
+    border: none;
+    border-bottom: 0.5px solid black;
+}
